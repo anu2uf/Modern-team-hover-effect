@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.team7{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.team-members7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member7 {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(223, 62, 62, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member7 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.member-info7 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(158, 25, 25, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.team-member7:hover .member-info7 {
+    transform: translateY(0);
+}
+
+.team-member7:hover img {
+    transform: scale(1.1);
+}
+
+
